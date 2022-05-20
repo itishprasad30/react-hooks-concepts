@@ -1,12 +1,15 @@
 import "./App.css";
-import ReducerTotorial from "./Hooks/ReducerTotorial";
+import * as React from "react";
+import UseEffectTutorial from "./Hooks/UseEffectTutorial";
+// import ReducerTotorial from "./Hooks/ReducerTotorial";
 
 // import UseState from "./Hooks/UseState";
 function App() {
   return (
     <div>
       {/* <UseState /> */}
-      <ReducerTotorial />
+      {/* <ReducerTotorial /> */}
+      <UseEffectTutorial />
     </div>
   );
 }
