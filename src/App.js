@@ -1,7 +1,9 @@
 import "./App.css";
 import * as React from "react";
+// import UseLayoutEffect from "./Hooks/UseLayoutEffect";
+import UseMemoTutorail from "./Hooks/UseMemoTutorail";
 // import UseEffectTutorial from "./Hooks/UseEffectTutorial";
-import UseRefTutorial from "./Hooks/UseRefTutorial";
+// import UseRefTutorial from "./Hooks/UseRefTutorial";
 // import ReducerTotorial from "./Hooks/ReducerTotorial";
 
 // import UseState from "./Hooks/UseState";
@@ -12,7 +14,11 @@ function App() {
       {/* <ReducerTotorial /> */}
       {/* <UseEffectTutorial /> */}
 
-      <UseRefTutorial />
+      {/* <UseRefTutorial /> */}
+
+      {/* <UseLayoutEffect /> */}
+
+      <UseMemoTutorail />
     </div>
   );
 }
