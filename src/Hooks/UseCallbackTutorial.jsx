@@ -3,9 +3,7 @@ import Child from "./Child";
 
 const UseCallbackTutorial = () => {
   const [toggle, setToggle] = React.useState(false);
-  const [data, setData] = React.useState(
-    "please give a star in the github repo "
-  );
+  const [data] = React.useState("please give a star in the github repo ");
   const btnHandle = () => {
     setToggle(!toggle);
   };
