@@ -3,6 +3,18 @@
   font-size: 32px;
 }
 
+input {
+  padding: 10px;
+}
+button {
+  padding: 5px;
+  border-radius: .5rem;
+  margin-left: 15px;
+}
+button:hover {
+  transition: 150ms ease-in-out;
+  cursor: pointer;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

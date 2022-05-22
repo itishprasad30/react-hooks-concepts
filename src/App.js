@@ -1,8 +1,11 @@
 import "./App.css";
 import * as React from "react";
+import Profile from "./components/Profile";
+import Login from "./components/Login";
+import ChangeColor from "./components/ChangeColor";
 // import UseLayoutEffect from "./Hooks/UseLayoutEffect";
 // import UseMemoTutorail from "./Hooks/UseMemoTutorail";
-import UseCallbackTutorial from "./Hooks/UseCallbackTutorial";
+// import UseCallbackTutorial from "./Hooks/UseCallbackTutorial";
 // import UseEffectTutorial from "./Hooks/UseEffectTutorial";
 // import UseRefTutorial from "./Hooks/UseRefTutorial";
 // import ReducerTotorial from "./Hooks/ReducerTotorial";
@@ -20,7 +23,10 @@ function App() {
       {/* <UseLayoutEffect /> */}
 
       {/* <UseMemoTutorail /> */}
-      <UseCallbackTutorial />
+      {/* <UseCallbackTutorial /> */}
+      <Profile />
+      <Login />
+      <ChangeColor />
     </div>
   );
 }
