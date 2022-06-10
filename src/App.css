@@ -8,7 +8,7 @@ input {
 }
 button {
   padding: 5px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin-left: 15px;
 }
 button:hover {
@@ -22,7 +22,7 @@ button:hover {
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-bounce infinite 3s ease-in-out;
   }
 }
 
@@ -41,11 +41,14 @@ button:hover {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes App-logo-bounce {
+  0% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

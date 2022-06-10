@@ -1,8 +1,10 @@
 import "./App.css";
 import * as React from "react";
-import Profile from "./components/Profile";
-import Login from "./components/Login";
-import ChangeColor from "./components/ChangeColor";
+import Counter from "./components/Counter";
+import logo from "./logo.svg";
+// import Profile from "./components/Profile";
+// import Login from "./components/Login";
+// import ChangeColor from "./components/ChangeColor";
 // import UseLayoutEffect from "./Hooks/UseLayoutEffect";
 // import UseMemoTutorail from "./Hooks/UseMemoTutorail";
 // import UseCallbackTutorial from "./Hooks/UseCallbackTutorial";
@@ -24,9 +26,11 @@ function App() {
 
       {/* <UseMemoTutorail /> */}
       {/* <UseCallbackTutorial /> */}
-      <Profile />
+      {/* <Profile />
       <Login />
-      <ChangeColor />
+      <ChangeColor /> */}
+      <img src={logo} className="App-logo" alt="logo" />
+      <Counter />
     </div>
   );
 }
