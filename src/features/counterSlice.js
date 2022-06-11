@@ -17,10 +17,15 @@ export const couterSlice = createSlice({
     incrementByAmount: (state, action) => {
       state.value += action.payload;
     },
+
+    decrementByAmount: (state, action) => {
+      state.value -= action.payload;
+    },
   },
 });
 
-export const { increment, decrement, incrementByAmount } = couterSlice.actions;
+export const { increment, decrement, incrementByAmount, decrementByAmount } =
+  couterSlice.actions;
 
 export const incrementAsync = (amount) => (dispatch) => {
   setTimeout(() => {
@@ -28,6 +33,11 @@ export const incrementAsync = (amount) => (dispatch) => {
   }, 1000);
 };
 
+export const decrementAsync = (amount) => (dispatch) => {
+  setTimeout(() => {
+    dispatch(decrementByAmount(amount));
+  }, 1000);
+};
 export default couterSlice.reducer;
 
 export const selectCount = (state) => state.counter.value;

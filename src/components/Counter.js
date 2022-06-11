@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   decrement,
+  decrementAsync,
+  decrementByAmount,
   increment,
   incrementAsync,
   incrementByAmount,
@@ -14,6 +16,7 @@ const Counter = () => {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState("2");
+  const [decrementAmount, setDecrementAmount] = useState("2");
 
   return (
     <div>
@@ -55,6 +58,27 @@ const Counter = () => {
           onClick={() => dispatch(incrementAsync(Number(incrementAmount)))}
         >
           Add Async
+        </button>
+      </div>
+
+      <div className={styles.row}>
+        <input
+          className={styles.textbox}
+          value={decrementAmount}
+          onChange={(e) => setDecrementAmount(e.target.value)}
+        />
+
+        <button
+          className={styles.button}
+          onClick={() => dispatch(decrementByAmount(Number(decrementAmount)))}
+        >
+          Subtract Amount
+        </button>
+        <button
+          className={styles.asyncButton}
+          onClick={() => dispatch(decrementAsync(Number(decrementAmount)))}
+        >
+          Sub Async
         </button>
       </div>
     </div>
